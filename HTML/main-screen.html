@@ -7,9 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/main-screen.css">
+    <script src="https://kit.fontawesome.com/36f035c426.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<div class="container">
+    <div class="upperArea">
+        <div class="carSideLeft">
+            <div class="parkAndCharge">
+                <h1 class="park">P</h1>
+                <div class="batteryLevel">
+                    <h5 class="chargeAmount">225 mi</h5>
+                    <span id="amountLeft">...</span><span id="usedAmount">...</span>
+                </div>
+            </div>
+            <hr>
+            <div class="mainWithCar">
+                <div class="openAndSpeedLimit">
+                    <div class="speedLimitSign">
+                        <h6 class="speedLimit">SPEED LIMIT</h6>
+                        <h4 class="speedAmount">45</h4>
+                    </div>
+                    <button class="openAndClose" id="open">OPEN</button>
+                </div>
+                <div class="carImage">
+                    <img src="../img/teslaTopView.png" id="carImage">
+                </div>
+                <div class="closeAndErrorCircle">
+                    <div class="closeButton">
+                        <button class="openAndClose" id="closeCharge">CLOSE</button>
+                    </div>
+                    <div class="circleError">
+                        <p class="hollowCircleForError"></p>
+                    </div>
+                </div>
+                <div class="openTrunk">
+                    <button class="openAndClose" id="opentrunk">OPEN</button>
+                </div>
+            </div>
+            <div class="lowerMain">
+                <div class="controlIcons">
+                    <button class="carSectionButton"><i class="fas fa-camera"></i></button>
+                    <button class="carSectionButton"><i class="fas fa-bolt"></i></button>
+                    <button class="carSectionButton"><i class="fas fa-microphone"></i></button>
+                </div>
+                <div class="swipeDots">
+                    <p>.</p>
+                    <p>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mapArea">
+            <img src="../img/map.jpeg" class="mapImage">
+        </div>
+    </div>
+    <div class="lowerButtons">
+        <button class="controlButtonsBottom" id="carButton"><i class="fas whiteButton fa-car"></i></button>
+        <button class="controlButtonsBottom" id="frontDefrost"><i class="fas whiteButton fa-window-maximize"></i></button>
+        <button class="controlButtonsBottom" id="rearDefrost"><i class="far whiteButton fa-window-maximize"></i></button>
+        <button class="controlButtonsBottom" id="seatWarmerDriver"><i class="fas whiteButton fa-chair"></i></button>
+        <button class="controlButtonsBottom" id="driverTemp"><span class="whiteButton">70•</span></button>
+        <button class="controlButtonsBottom" id="fanSpeed"><i class="fas whiteButton fa-fan"></i></button>
+        <button class="controlButtonsBottom" id="passengerTemp"><span class="whiteButton">72•</span></button>
+        <button class="controlButtonsBottom" id="seatWarmerPassenger"><i class="fas whiteButton fa-chair"></i></button>
+        <button class="controlButtonsBottom" id="music"><i class="fas whiteButton fa-music"></i></button>
+        <button class="controlButtonsBottom" id="phone"><i class="fas whiteButton fa-mobile"></i></button>
+        <button class="controlButtonsBottom" id="volume"><i class="fas whiteButton fa-volume-up"></i></button>
+    </div>
+</div>
 <script src="../JS/main-screen.js"></script>
 </body>
 </html>

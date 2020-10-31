@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+button:hover{
+    cursor: pointer;;
+}
+.container{
+    height: 96vh;
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 2vw;
+}
+.upperArea{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+#amountLeft{
+    background-color: green;
+    color: green;
+    height: 2em;
+    width: 4em;
+}
+#usedAmount{
+    background-color: grey;
+    color: grey;
+    height: 2em;
+    width: 2em;
+}
+.parkAndCharge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.batteryLevel{
+    display: flex;
+}
+.chargeAmount{
+
+}
+#open{
+    align-self: center;
+}
+.openAndSpeedLimit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.speedLimitSign{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-left: auto;
+    margin-right: 2%;
+}
+.speedLimit{
+    margin-left: 3px;
+}
+.carSideLeft{
+    background-color: #cbd0c2;
+    flex-basis: 35%;
+    height: 100%;
+}
+.carSectionButton{
+    background-color: #cbd0c2;
+    border: none;
+}
+.mainWithCar{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.openAndClose{
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 6em;
+    height: 4em;
+}
+.lowerMain{
+    height: 20%;
+    width: 100%;
+}
+.carImage{
+    height: 45%;
+    width: 90%;
+}
+#carImage{
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+.mapArea{
+    background-color: grey;
+    flex-basis: 65%;
+    height: 100%;
+}
+.mapImage{
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.lowerButtons{
+    background-color: #363535;
+    height: 20vh;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.whiteButton{
+    color: white;
+}
+.controlButtonsBottom{
+    background-color: #363535;
+    border: none;
+}
+.controlIcons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.fas{
+    font-size: 1.5em;
+}
