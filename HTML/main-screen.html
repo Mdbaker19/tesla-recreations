@@ -17,20 +17,24 @@
                 <h1 class="park">P</h1>
                 <div class="batteryLevel">
                     <h5 class="chargeAmount">225 mi</h5>
-                    <span id="amountLeft">...</span><span id="usedAmount">...</span>
+                    <div class="battery">
+                        <span id="amountLeft">...</span><span id="usedAmount">...</span>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="mainWithCar">
                 <div class="openAndSpeedLimit">
                     <div class="speedLimitSign">
-                        <h6 class="speedLimit">SPEED LIMIT</h6>
+                        <div class="limitText">
+                            <h6 class="speedLimit">SPEED LIMIT</h6>
+                        </div>
                         <h4 class="speedAmount">45</h4>
                     </div>
-                    <button class="openAndClose" id="open">OPEN</button>
+                    <button class="openAndClose" id="openFrunk">OPEN</button>
                 </div>
                 <div class="carImage">
-                    <img src="../img/teslaTopView.png" id="carImage">
+                    <img src="../img/teslaTopView.png" id="carImage" alt="car">
                 </div>
                 <div class="closeAndErrorCircle">
                     <div class="closeButton">
@@ -41,23 +45,25 @@
                     </div>
                 </div>
                 <div class="openTrunk">
-                    <button class="openAndClose" id="opentrunk">OPEN</button>
+                    <button class="openAndClose" id="openTrunk">OPEN</button>
                 </div>
             </div>
             <div class="lowerMain">
                 <div class="controlIcons">
-                    <button class="carSectionButton"><i class="fas fa-camera"></i></button>
-                    <button class="carSectionButton"><i class="fas fa-bolt"></i></button>
-                    <button class="carSectionButton"><i class="fas fa-microphone"></i></button>
+                    <button class="carSectionButton" id="cameraDisplay"><i class="fas fa-camera"></i></button>
+                    <button class="carSectionButton" id="checkCharge"><i class="fas fa-bolt"></i></button>
+                    <button class="carSectionButton" id="voiceRecognition"><i class="fas fa-microphone"></i></button>
                 </div>
                 <div class="swipeDots">
-                    <p>.</p>
-                    <p>.</p>
+                    <button class="dotButtons" id="firstDot">.</button>
+                    <button class="dotButtons">.</button>
+                    <button class="dotButtons">.</button>
                 </div>
             </div>
         </div>
         <div class="mapArea">
-            <img src="../img/map.jpeg" class="mapImage">
+            <p id="action">-----</p>
+            <img src="../img/map.jpeg" class="mapImage" alt="map">
         </div>
     </div>
     <div class="lowerButtons">
